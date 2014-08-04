@@ -18,7 +18,7 @@ To install from sources:
 To configure:
 
  1. Go to chrome://extensions/ and click the Options link.
- 2. In Source URL, enter a regex that matches the URLs that should be rewritten, e.g. `https://twitter\.com/(.+)`
+ 2. In Source URL, enter a regex that matches the URLs that should be rewritten, e.g. `https://twitter\.com/(?!i/)(.+)`
  3. In Destination URL, enter the URL that should replace the Source URL, with any groups indicated by *X, where X is a 1-based index into the matched groups list e.g. `https://twitter.com/*1/with_replies/`
  4. Now, any link that begins with Source URL will have that replaced with Destination URL. In the example above, `https://twitter.com/jseakle` would be rewritten to `https://twitter.com/jseakle/with_replies`
 
