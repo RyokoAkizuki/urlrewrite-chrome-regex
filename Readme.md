@@ -26,6 +26,7 @@ Notes:
  
  * Make sure to include the protocol, like `http://`.
  * There is no prefix match, just wildcard support.
+ * To save you from yourself, this appends #NOLOOP to the end of all urls. This fixes loops, but probably breaks literally any website that uses anchors for anything. This is the thing I will fix if I ever touch this again. Sorry! Pull requests welcome!
 
 
 Licence
